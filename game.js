@@ -1,9 +1,23 @@
-//varaibles
-    //num wins
-    //num lose
-    //num ties
+var wins = 0;
+var losse = 0;
+var ties = 0;
 
 
+var choices = ["R", "P" ,"S"]
+
+// var humanChoice = prompt("Choose R, P or S")
+// console.log(humanChoice)
+
+
+
+//computer choice
+var randomNum = Math.floor(Math.random() *3)
+console.log(choices[randomNum])
+
+
+
+
+// alert,  confirm,  prompt
 //algorith
 
 //pseudo-code
