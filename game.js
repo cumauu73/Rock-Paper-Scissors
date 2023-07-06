@@ -4,15 +4,57 @@ var ties = 0;
 
 
 var choices = ["R", "P" ,"S"]
+//human choice- get choice from usefr input
+var humanChoice = prompt("Choose R, P or S")
 
-// var humanChoice = prompt("Choose R, P or S")
-// console.log(humanChoice)
 
 
 
 //computer choice
 var randomNum = Math.floor(Math.random() *3)
-console.log(choices[randomNum])
+var computerChoice = choices[randomNum]
+
+console.log("Humancho :" + humanChoice)
+console.log("Computer :" + computerChoice)
+
+if ( 
+    humanChoice === "S" && computerChoice === "P" ||
+    humanChoice === "R" && computerChoice === "S" ||
+    humanChoice === "P" && computerChoice === "R"
+    // if human is s and computer p or
+// if human is r and computer s or
+//if human is p and computer r
+//win 
+
+) {
+    //alert we win
+    alert("You won!")
+    //increase win
+
+} else if (
+    humanChoice===computerChoice
+    //if computerchoice===human
+) {
+    alert("Round tied!")
+ //alert ties
+//ties
+//increase tise
+} else {
+//else
+//alert loss
+alert("You lost!")
+//lost
+//increase loses
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -34,19 +76,6 @@ console.log(choices[randomNum])
 
 //compare
 
-// if human is s and computer p or
-// if human is r and computer s or
-//if human is p and computer r
-//win 
-//increase win
-
-//if computerchoice===human
-//ties
-//increase tise
-
-//else
-//lost
-//increase loses
 
 //ask user douwanna paly again
 //if yes restart game
